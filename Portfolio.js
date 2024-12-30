@@ -1,18 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Smooth Scroll for Navigation Links
-    document.querySelectorAll(".nav-link").forEach(link => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 70, // Adjust for fixed navbar
-            behavior: "smooth"
-          });
-        }
-      });
-    });
   
     // Scroll Animation for Sections
     const sections = document.querySelectorAll(".container > div");
