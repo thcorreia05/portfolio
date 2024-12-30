@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="Portfolio.js"></script>
+
+</head>
+<header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a href="Portfolio/index.html" class="navbar-brand text-uppercase font-weight-bold">Portfolio</a>
+                <div id="navbarContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="Portfolio/index.html" class="nav-link text-uppercase">Acceuil</a></li>
+                        <li class="nav-item"><a href="projet.html" class="nav-link text-uppercase">Projets</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link text-uppercase">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+    
+<body> 
+    <div class="container">
+        <div class="pt-5 mb-5 text-white">
+            <div class="py-5 mt-5">
+                <h1 class="display-4 text-center">Qui suis-je ?</h1>
+                <div id="presentation" >
+                    <p id="Pres-texte" class="d-flex bg-light.bg-gradient text-center">
+                        Bonjour et bienvenue sur mon portfolio!
+                        Je m'appelle Theo CORREIA, et vous vous trouvez actuellement sur mes une pages présentant les projets informatiques que j'ai pu réaliser. 
+                        Je possède une expérience en développement et je maîtrise diverses langages Java, Python et d'autres que vous allez découvrir sur cette page
+                        Ma formation m'a permis de travailler sur de nombreux projets, allant des applications simples aux systèmes complexes.
+                        Je crois fermement que chaque projet est une opportunité d'apprentissage et de croissance,
+                        et je m'engage à rester à la pointe des nouvelles technologies et des meilleures pratiques de l'industrie.                   
+                        Parcourez mon portfolio pour découvrir les projets sur lesquelles j'ai ttravaillé et n'hésitez pas à me contacter 
+                        si vous en voyez le besoin.                    
+                        Merci de votre visite!
+                    </p>
+                    <img class="fit-picture img-fluid p-3" src="img/portrait.jpg" alt="Photo portrait" />
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-dark mr-5" onclick="window.open('https://www.linkedin.com/in/theo-correia-', '_blank');"> Mon Linkedin </button>
+                    <a href="#"><button type="button" class="btn btn-dark" onclick="downloadPDF()">Mon CV</button></a>
+                    <script>
+                        function downloadPDF() {
+                            window.open('fichier/CV_CORREIA_THEO.pdf','_blank');
+                        }
+                    </script>
+                </div>
+            </div>
+            <div id="lang-pic" class="py-5 col">
+                <h1 class="d-flex text-center">Langages maitrisés</h1>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid p-3" src="img/python.svg" alt="Logo python" /></a>
+                    <div>
+                        <h2 class="text-center">Python</h2>
+                        <p class="text-center m-3">
+                            Python est un langage de programmation polyvalent, principalement connu pour sa simplicité et sa lisibilité.
+                            Il est généralement utilisé dans des domaines comme le développement web, l'analyse de données ou
+                            l'intelligence artificielle. Il possède de vastes bibliothèques qui facilitent un développement rapide et efficace,
+                            ce qui le rends utile pour de nombreuses implémentations.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid p-3" src="img/java-icon.svg" alt="Logo Java" /></a>
+                    <div>
+                        <h2 class="text-center">Java</h2>
+                        <p class="text-center m-3">
+                            Java est un langage de programmation polyvalent qui est orienté objet.
+                            Il est utilisé dans le développement d'applications web, mobiles et d'entreprise.
+                            Sa robustesse, sa sécurité et son vaste écosystème de bibliothèques et frameworks permmettent
+                            de réaliser les projets complexes.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/sql.svg" alt="Logo SQL" /></a>
+                    <div>
+                        <h2 class="text-center">SQL</h2>
+                        <p class="text-center m-3">
+                            SQL est un langage de programmation conçu pour la gestion des bases de données.
+                            Il permet d'effectuer des opérations telles que la récupération, l'insertion
+                            la mise à jour et la suppression de données. De plus, grace à ce langage il est possible de gérer des bases de données.
+                            Ce langage est donc essentiel pour les projets avec serveur et base de données.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/php.svg" alt="Logo Bash" /></a>
+                    <div>
+                        <h2 class="text-center">PHP</h2>
+                        <p class="text-center m-3">
+                            PHP est un langage de programmation côté serveur utilisé pour créer des sites web dynamiques. 
+                            Il génère du contenu HTML en fonction des actions des utilisateurs et est souvent associé à des bases de données comme MySQL. 
+                            Sa simplicité et sa flexibilité en font un choix populaire pour le développement web.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/csharp.svg" alt="Logo C#" /></a>
+                    <div>
+                        <h2 class="text-center">C# (sharp)</h2>
+                        <p class="text-center m-3">
+                            C# ("C sharp") est un langage de programmation moderne utilisé pour le développement d'applications Windows, web,
+                            mobiles et d'entreprise. Comme Java, une de ces caractéristiques principale est le programmation orientée objet.
+                            C# offre un environnement de développement robuste et productif très compatible avec les environnement Windows.
+                            Il est intéréssant pour ses performances, sa sécurité et son évolutivité.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/js.svg" alt="Logo js" /></a>
+                    <div>
+                        <h2 class="text-center">Javascript</h2>
+                        <p class="text-center m-3">
+                            JavaScript ou JS est un langage de programmation utilisé pour le développement web.
+                            JavaScript est principalement utilisé pour ajouter des fonctionnalités interactives aux sites web,comme des animations,
+                            des formulaires dynamiques et des effets visuels.
+                            JavaScript est devenu un pilier du développement web. De plus, JavaScript est également
+                            utilisé pour le développement coté serveur,
+                            ce qui en fait un langage de programmation utilepour la création d'applications web modernes, animés et réactives.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/html.svg" alt="Logo html" /></a>
+                    <a href="#"><img class="fit-picture img-fluid m-3" src="img/css.svg" alt="Logo css" /></a>
+                    <div>
+                        <h2 class="text-center">HTML/CSS</h2>
+                        <p class="text-center m-3">
+                            HTML est le langage utilisé pour créer la structure et le contenu des pages web.
+                            En utilisant des balises prédéfinies telles que 
+                            les développeurs peuvent organiser le contenu de manière sémantique et structurée.
+                            CSS est utilisé pour définir l'apparence et le style des sites web.
+                            Ensemble, ils représentent le nécéssaire du développement web moderne,
+                            et permet aux développeurs de créer des expériences web attrayantes et réactives qu'il est possible de combiner au JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="d-flex bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="flex-fill col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Email: <a href="mailto:correiatheopro@gmail.com" class="text-primary">correiatheopro@gmail.com</a></p>
+          <p>Téléphone: <a href="tel:+0781368860" class="text-primary">07 81 36 88 60</a></p>
+        </div>
+        <div class="flex-fill col-md-4 mb-3">
+          <h5>Suivez-moi</h5>
+          <a href="https://gitlab-ce.iut.u-bordeaux.fr/thcorreia" class="text-primary d-block mb-1">GitLab</a>
+          <a href="https://github.com/thcorreia05" class="text-primary d-block mb-1">GitHub</a>
+        </div>
+        <div class="flex-fill col-md-4 mb-3 text-md-endS">
+          <h5>© CORREIA Théo 2024</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

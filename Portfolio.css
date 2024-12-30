@@ -1,0 +1,77 @@
+.navbar{
+    background-color: rgb(110, 110, 110);
+}
+
+a{
+    color: black;
+}
+.navbar .nav-link{
+    color: black;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: black;
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+img{
+    width: 500px;
+}
+
+#lang-pic > div{
+    background: rgba(110, 110, 110, 0.3);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #222222;
+    background-image: linear-gradient(135deg, #222222 0%, #000000 100%);
+}
+
+
+#presentation {
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+    align-items: center; /* Aligne le contenu verticalement */
+    gap: 15px; /* Espace entre l'image et le texte */
+    padding: 15px;
+}
+
+#presentation img {
+    width: 250px; /* Largeur par défaut de l'image */
+    height: auto; /* Garde les proportions */
+    border-radius: 10px; /* Coins arrondis pour un design moderne */
+}
+
+#presentation p {
+    flex: 1; /* Le texte prend tout l'espace restant */
+    font-size: 16px; /* Taille du texte lisible */
+    margin: 0;
+}
+
+/* Responsive pour téléphones */
+@media (max-width: 768px) {
+    #presentation {
+        flex-direction: column; /* Passe en colonne pour petits écrans */
+        text-align: center; /* Centrer le texte */
+    }
+
+    #presentation img {
+        width: 100%; /* L'image prend toute la largeur de l'écran */
+        max-width: 300px; /* Largeur maximale pour éviter qu'elle ne soit trop grande */
+        margin: 0 auto; /* Centre l'image horizontalement */
+    }
+
+    #presentation p {
+        font-size: 14px; /* Réduit légèrement la taille du texte */
+    }
+}
