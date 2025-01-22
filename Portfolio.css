@@ -32,11 +32,16 @@ img{
     margin-bottom: 10px;
 }
 
+#lang-pic img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
 body {
     background-color: #222222;
     background-image: linear-gradient(135deg, #222222 0%, #000000 100%);
 }
-
 
 #presentation {
     display: flex;
